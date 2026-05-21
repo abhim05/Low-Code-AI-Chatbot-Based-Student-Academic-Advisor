@@ -23,22 +23,32 @@ dist-ssr
 *.sln
 *.sw?
 
-# Dependency directories
+# Dependency directories to ignore in the root, backend and frontend directories that contain node modules which are not necessary to track in git and can be reinstalled using package.json
 node_modules/
 backend/node_modules/
 frontend/node_modules/
 
-# Environment variables
+# Environment variables files that contain sensitive information such as API keys, database credentials, and other configuration settings that show up in the code and should not be tracked in git for security reasons 
 .env
 
-# Optional: Ignore python caches if you have any Python scripts running
+# Optional: Ignore python caches if you have any python scripts running and you don't want to track them in git 
 __pycache__/
 
-# Ignore Node modules
+# Ignore Node modules in the root, backend and frontend directories
 node_modules/
 backend/node_modules/
 frontend/node_modules/
 
-# Ignore Environment Variables
+# Ignore Environment Variables files that contain sensitive information such as API keys, database credentials, and other configuration settings that show up in the code
 .env
 backend/.env
+
+# Optional: Ignore python caches if you have any python scripts running and you don't want to track them in the git repostitory
+__pycache__/
+
+# --- IGNORE --- 
+# This is a placeholder for any addditional files or directories that you may want to ignore in the future. You can add them below this line and they will be ignored by git. This is useful for keeping your .gitignore file organized and easy to read.
+# For example, if you want to ignore a directory called "temp" that contains temporary files that are not necessary to track in git, you can add the following line below this comment: 
+# temp/ 
+# similarly, if you want to ignore a file called "config.json" that contains configuration settings that are not necessary to track in git, you can add the following line below this comment:
+#config.json
