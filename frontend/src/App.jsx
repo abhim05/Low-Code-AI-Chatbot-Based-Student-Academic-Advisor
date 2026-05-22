@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API = 'https://low-code-ai-chatbot-based-student.onrender.com';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 // ===== Simple Markdown Renderer =====
 function renderMarkdown(text) {
